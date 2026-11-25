@@ -74,7 +74,7 @@ jobs:
 
       # Trivy : rapport JSON + blocage si vulnérabilités
       - name: Trivy scan (json, blocking)
-        uses: aquasecurity/trivy-action@0.20.0
+        uses: aquasecurity/trivy-action@0.36.0
         with:
           image-ref: ${{ env.DOCKER_IMAGE_NAME }}
           format: 'json'
